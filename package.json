@@ -1,0 +1,23 @@
+{
+  "name": "Bookings GraphQL API",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:nizarayari/simpleGraphQL.git",
+  "author": "nizarayari <nizarayari17@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node src/server",
+    "dev": "nodemon src/server"
+  },
+  "dependencies": {
+    "dotenv": "^5.0.1",
+    "faker": "^4.1.0",
+    "graphql-yoga": "^1.8.5",
+    "lodash": "^4.17.5"
+  },
+  "devDependencies": {
+    "graphql": "^0.13.2",
+    "graphql-tools": "^2.24.0",
+    "nodemon": "^1.17.3"
+  }
+}

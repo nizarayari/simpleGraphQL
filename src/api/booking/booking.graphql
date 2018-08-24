@@ -1,0 +1,41 @@
+
+enum Status {
+  CANCELLED
+  RESERVED
+  HOLD
+}
+
+type Booking {
+  id: ID!
+  status: Status!
+  startDate: String!
+  endDate: String!
+  guest: Guest!
+  source: String!
+  bookingPrice: Price! 
+}
+
+type Guest {
+  id: ID!
+  firstName: String!
+  lastName: String!
+  email: String!
+  address: Address!
+}
+
+type Price {
+  value: Float!
+  currency: String!
+}
+
+type Address {
+  streetAddress: String!
+  city: String!
+  state: String!
+  zipCode: String!
+  country: String!
+}
+
+type Query {
+  bookings: [Booking]!
+}
